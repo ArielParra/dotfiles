@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/env bash
+
+# Now Working
+
 NAME="HP WMI hotkeys"
 KEY_ID="161"
 

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/env sh
+
+# Only rotates in two directions, made for my self to take notes on xournalpp
 
 #inspired by "https://forums.linuxmint.com/viewtopic.php?f=191&t=108174"
 
@@ -22,12 +24,14 @@ normal)
 	xrandr -o left
 	xinput set-prop "$penDriver" "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
 	xinput set-prop "$touchDriver" "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
+    xinput set-prop "N-Trig MultiTouch" "Device Enabled" 0
 	;;
 left)
 	# rotate to normal
 	xrandr -o normal
 	xinput set-prop "$penDriver" "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
 	xinput set-prop "$touchDriver" "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+    xinput set-prop "N-Trig MultiTouch" "Device Enabled" 1
 	;;
 
 esac

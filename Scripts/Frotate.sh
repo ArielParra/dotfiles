@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env sh
 
 #inspired by "https://forums.linuxmint.com/viewtopic.php?f=191&t=108174"
 

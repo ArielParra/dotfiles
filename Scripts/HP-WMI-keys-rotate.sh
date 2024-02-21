@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/env bash
+
+# intended to rotate with HP-WMI-KEYS, not working!
 
 #inspired by "https://forums.linuxmint.com/viewtopic.php?f=191&t=108174"
 
