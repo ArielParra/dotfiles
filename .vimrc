@@ -9,7 +9,7 @@ set expandtab
 "set textwidth=72
 
 "number lines
-set number
+"set number
 
 "Syntax highlighting 
 set background=light
